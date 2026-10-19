@@ -1,6 +1,8 @@
 import { Component, input,effect } from "@angular/core";
+import { DataBinding} from "../data-binding/data-binding"
 
 @Component({
+     imports: [DataBinding],
     selector:'login-component',
     template:'',
     templateUrl:'./login.html',
