@@ -1,1 +1,67 @@
-<p>data-binding works!</p>
+<!-- ---interpolation-- -->
+<!-- <p>data-binding works!</p> -->
+<!-- <h1>{{x}}</h1> -->
+<!-- <h2>{{1+2}}</h2> -->
+<!-- <h1>Hello {{name}}</h1> -->
+
+<!-- --propert biding-- -->
+<!-- <img [src]=" imageUrl" alt="Logo"> -->
+
+<!-- <table border="1">
+  <tr>
+    <!-- <th [attr.colspan]=y>Al class</th> -->
+  <!-- </tr>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>city</td>
+  </tr>
+  <tr>
+    <td>sarath</td>
+    <td>mahi</td>
+    
+  </tr>
+  <tr>
+    <td>Dk</td>
+    <td>35</td>
+    
+  </tr>
+</table> --> 
+
+
+
+<!-- <button class="my-button" [disabled]='disabled'>Login</button> -->
+
+<!-- <h1 [style.color]="headingColor">Hello</h1> -->
+
+<!-- <div class="status-card" [class.active]="isactive" [class.invalid]="!isactive">hello all</div> -->
+
+<!-- <h2 id="first">hi</h2>
+<h2>hii</h2>
+<h2>hiii</h2> -->
+<!-- <H1>{{count}}</H1>
+
+<button class="my-button" (click)="incrementCounter()">Click me </button>
+
+<button class="my-button" (click)="reset()">Reset </button>
+<br>
+<br>
+<input type="text" placeholder="write someting" (input)="input($event)"/>
+<h2>{{h}}</h2>
+<br>
+<br>
+<input type="text" placeholder="write someting" (keydown)="onKeyUp($event)"/>
+<br>
+<br> -->
+<input type="text" placeholder="write someting" (keydown.enter)="keyDowncount($event)"/>
+<br>
+<br>
+
+<input type="text" #casueInput/>
+
+<button (click)="captureButton(casueInput)">click me</button>
+<br>
+<h1>Two way data binding</h1>
+<!-- //--------------------------------------------two way data binding----- -->
+<input type="text" [(ngModel)]="name_1"/>
+<h2>{{name_1}}</h2>

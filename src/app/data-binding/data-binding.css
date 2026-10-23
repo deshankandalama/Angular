@@ -1,0 +1,6 @@
+#first {
+    color: blue
+}
+
+.status-card.active { border-color: #56aa8c; color: #257159; background: #edf9f5; }
+.status-card.invalid { border-color: #e16b85; color: #9d3450; background: #fff0f3; }
